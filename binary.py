@@ -46,5 +46,9 @@ print(power)
 x = int(input("Please enter a number: "))
 
 for power in powers:
-    print(x // power, end='')
+    bit = x //power
+    if bit != 0:
+        printing = True
+    if printing:
+        print(bit, end='')
     x %= power
