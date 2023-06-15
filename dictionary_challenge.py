@@ -37,4 +37,4 @@ while True:
     if direction in exits[loc]:
         loc = exits[loc][direction]
     else:
-        print("You cannot go in that direction")
+        print("You cannot go in that direction") 
