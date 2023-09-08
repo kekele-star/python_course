@@ -1,0 +1,39 @@
+Let's define the key terms of Object-Oriented Programming (OOP) in Python using the example of a `Cat` class:
+
+1. **Class:** A class is a blueprint or template for creating objects. In this case, we'll create a `Cat` class:
+
+    ```python
+    class Cat:
+        def __init__(self, name, breed):
+            self.name = name
+            self.breed = breed
+
+        def meow(self):
+            print(f"{self.name} meows")
+    ```
+
+2. **Object:** An object is an instance of a class. It is a self-contained unit that has its own unique data attributes and can perform actions defined by the class's methods. For example:
+
+    ```python
+    my_cat = Cat("Whiskers", "Siamese")
+    ```
+
+3. **Attribute:** An attribute is a variable that is associated with a class and is used to store data specific to that class. In this case, `name` and `breed` are attributes of the `Cat` class. They can be accessed using dot notation, such as `my_cat.name`.
+
+4. **Method:** A method is a function defined within a class that can operate on the data attributes of the class and perform specific actions. Methods are accessed using dot notation on objects. For example, `my_cat.meow()` would call the `meow` method of the `my_cat` object.
+
+5. **Constructor:** A constructor is a special method called `__init__` in Python that is used to initialize the attributes of an object when it is created. It is called automatically when an object is instantiated. For example:
+
+    ```python
+    def __init__(self, name, breed):
+        self.name = name
+        self.breed = breed
+    ```
+
+6. **Inheritance:** Inheritance is a mechanism that allows a class (called the subclass or derived class) to inherit attributes and methods from another class (called the superclass or base class). This promotes code reusability. For example, you can create a subclass of `Cat` like `Lion` that inherits some behaviors.
+
+7. **Encapsulation:** Encapsulation is the concept of bundling data (attributes) and the methods (functions) that operate on that data within a single unit (class). It hides the internal implementation details of a class and exposes a clean interface for interacting with the object.
+
+8. **Polymorphism:** Polymorphism allows objects of different classes to be treated as objects of a common superclass. It enables the use of a single interface to represent different types of objects. This is often achieved through method overriding and duck typing in Python.
+
+These terms apply to the `Cat` class in the same way as they do to the `Dog` class in the previous explanation, forming the foundation of Object-Oriented Programming in Python when working with cats.
