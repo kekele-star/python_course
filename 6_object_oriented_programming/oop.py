@@ -1,7 +1,4 @@
 # Object Oriented Programming in Python
-
-
-
 class Programmer(object):
 
     def __init__(self, make, price):
@@ -9,18 +6,22 @@ class Programmer(object):
         self.price = price
         self.on = False
 
-CS = Programmer("CS", 5000)
-print(CS.make)
-print(CS.price)
+    def switch_on(self):
+        self.on = True
 
-CS.price = 6000
-print(CS.price)
 
-DevOps = Programmer("DevOps", 7000)
+cs = Programmer("cs", 5000)
+print(cs.make)
+print(cs.price)
 
-print(f"Models: {CS.make} = {CS.price}, {DevOps.make} = {DevOps.price}")
+cs.price = 6000
+print(cs.price)
 
-print("Models: {0.make} = {0.price}, {1.make} = {1.price}".format{CS, DevOps})
+devOps = Programmer("devOps", 7000)
+
+print(f"Models: {cs.make} = {cs.price}, {devOps.make} = {devOps.price}")
+
+print("Models: {0.make} = {0.price}, {1.make} = {1.price}".format({cs, devOps}))
 
 """
 Class: template for creating objects. All objects created using the same class will have the same characteristics
@@ -29,3 +30,17 @@ Instantiate: create an instance of a class
 Method: a function defined in a class
 Attribute: a variable bound to an instance of a class
 """
+
+print(cs.on)
+cs.switch_on()
+print(cs.on)
+
+Programmer.switch_on(cs)
+print(cs.on)
+cs.switch_on()
+
+print("*" * 80)
+
+cs.power = 1.5
+print(cs.power)
+print(cs.power)
