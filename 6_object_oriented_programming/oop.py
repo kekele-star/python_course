@@ -1,6 +1,8 @@
 # Object Oriented Programming in Python
 class Programmer(object):
 
+    power_source = "coding"
+
     def __init__(self, make, price):
         self.make = make
         self.price = price
@@ -43,4 +45,9 @@ print("*" * 80)
 
 cs.power = 1.5
 print(cs.power)
-print(cs.power)
+#print(devOps.power)
+
+print(Programmer.power_source)
+print(cs.power_sauce)
+print(devOps.power_source)
+
