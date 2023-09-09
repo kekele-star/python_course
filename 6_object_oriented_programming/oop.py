@@ -8,3 +8,12 @@ class Programmer(object):
         self.make = make
         self.price = price
         self.on = False
+
+CS = Programmer("CS", 5000)
+print(CS.make)
+print(CS.price)
+
+CS.price = 6000
+print(CS.price)
+
+DevOps = Programmer("DevOps", 7000)
