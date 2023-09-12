@@ -1,8 +1,10 @@
-# Ask user for their name
-name = input("What's your name? ").strip().title()
+def main():
+    x = int(input("What's x?"))
+    print("x squared is", square(x))
 
-# Split user's name into first name and last name
-first, last = name.split(" ")
 
-# Say hello to user
-print(f"Hello, {first}")
+def square(n):
+    return pow(n, 2)
+
+
+main()
