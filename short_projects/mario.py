@@ -1,9 +1,12 @@
 def main():
-    print_column(5)
+    height = int(input("Height: "))
+    pyramid(height)
 
 
-def print_column(height):
-    for _ in range(height):
-        print("#")
+def pyramid(n):
+    for i in range(n):
+        print("#" * i)
 
-main()
+
+if __name__ == "__main__":
+    main()
